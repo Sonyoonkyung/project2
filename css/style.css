@@ -25,6 +25,10 @@
 	left: 150px;
 	width: 500px;
 	z-index: 1000;
+	opacity: 1;
+}
+.popup.active {
+	opacity: 0;
 }
 .popup img {
 	width: 100%;

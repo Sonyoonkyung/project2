@@ -6,7 +6,8 @@ $(function(){
 		}, function(){
 			$(this).removeClass("on");
 		}
-	)
+	);
+
 	$(".nav > ul > li:first-child > a").focusin(function(){
 		$("#header .menu").addClass("on");
 	});
@@ -14,8 +15,9 @@ $(function(){
 		$("#header .menu").removeClass("on");
 	});
 
-	$(".popup .popup_close a").click(function(){
-		$(".popup").fadeOut(300);
+	$(".popup .popup_close a").click(function(e){
+		e.preventDefault();
+		$(".popup").addClass("active");
 	});
 
   var n=0;
